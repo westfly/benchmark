@@ -13,4 +13,5 @@ function build() {
 }
 
 #build  cpp-serialization-benchmark
-build format-benchmark
+#build format-benchmark
+build $*

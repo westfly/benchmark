@@ -1,0 +1,28 @@
+The number of values by digit count:
+ 1  27518
+ 2 246950
+ 3 450053
+ 4 247697
+ 5  25016
+ 6   2491
+ 7    249
+ 8     25
+ 9      0
+10      1
+--------------------------------------------------------------------------------
+Benchmark                      Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------
+sprintf                124442000 ns    122395833 ns            6 items_per_second=8.17021M/s
+std_ostringstream       91402611 ns     92013889 ns            9 items_per_second=10.8679M/s
+std_to_string          122015800 ns    122767857 ns            7 items_per_second=8.14545M/s
+std_to_chars            17758805 ns     17530488 ns           41 items_per_second=57.0435M/s
+fmt_to_string           23500464 ns     23437500 ns           28 items_per_second=42.6667M/s
+fmt_format_runtime      43328606 ns     43198529 ns           17 items_per_second=23.1489M/s
+fmt_format_compile      23009557 ns     22916667 ns           30 items_per_second=43.6364M/s
+fmt_format_to_runtime   37416819 ns     37946429 ns           21 items_per_second=26.3529M/s
+fmt_format_to_compile   15980844 ns     15972222 ns           45 items_per_second=62.6087M/s
+fmt_format_int          14293398 ns     14375000 ns           50 items_per_second=69.5652M/s
+voigt_itostr            26576319 ns     26442308 ns           26 items_per_second=37.8182M/s
+u2985907                14842773 ns     14862805 ns           41 items_per_second=67.2821M/s
+decimal_from            20337030 ns     19847973 ns           37 items_per_second=50.383M/s
+stout_ltoa              64579218 ns     63920455 ns           11 items_per_second=15.6444M/s

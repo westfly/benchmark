@@ -1,0 +1,22 @@
+--------------------------------------------------------------------
+Benchmark                          Time             CPU   Iterations
+--------------------------------------------------------------------
+fprintf                    445010700 ns    445312500 ns            2
+std_ofstream               101246633 ns    101562500 ns            6
+fmt_print_compile/8192      49150463 ns     47851562 ns           16
+fmt_print_compile/16384     28729327 ns     28846154 ns           26
+fmt_print_compile/32768     19046410 ns     18750000 ns           30
+fmt_print_compile/65536     17086522 ns     18055556 ns           45
+fmt_print_compile/131072    16948308 ns     17314189 ns           37
+fmt_print_compile/262144    15494681 ns     15869141 ns           64
+fmt_print_compile/524288    16979888 ns     12500000 ns           50
+fmt_print_compile/1048576   13350596 ns     13671875 ns           56
+fmt_print_runtime/8192      69930033 ns     69444444 ns            9
+fmt_print_runtime/16384     54734092 ns     55288462 ns           13
+fmt_print_runtime/32768     42980460 ns     42708333 ns           15
+fmt_print_runtime/65536     41018821 ns     41118421 ns           19
+fmt_print_runtime/131072    48021306 ns     47794118 ns           17
+fmt_print_runtime/262144    56733373 ns     55208333 ns           15
+fmt_print_runtime/524288    49149620 ns     51041667 ns           15
+fmt_print_runtime/1048576   53508580 ns     53125000 ns           10
+fmt_print_compile_default   18832530 ns     18581081 ns           37
