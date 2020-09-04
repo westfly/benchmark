@@ -1,0 +1,32 @@
+2020-09-04 20:29:20
+Running ./cpp-serialization-benchmark
+Run on (8 X 2400 MHz CPU s)
+Load Average: 0.52, 0.58, 0.59
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                        172 ms          172 ms            3 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           10.4 ms         10.1 ms           71 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       280 ms          281 ms            2 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         4412 ms         4406 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                   1922 ms         1922 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                2035 ms         2031 ms            1 size=176.378M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.003 ms        0.002 ms       298667
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.277 ms        0.265 ms         2240
+BM_SAFE_DESERIALIZE<fbs_bench>                                  76.6 ms         76.4 ms            9
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          387 ms          383 ms            2
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             436 ms          430 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                                228 ms          230 ms            4
+BM_FAST_DESERIALIZE<cista_raw_bench>                            49.6 ms         50.0 ms           10
+BM_TRAVERSE<cista_raw_bench>                                     230 ms          229 ms            3 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                             237 ms          234 ms            3 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                  242 ms          240 ms            3 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                        240 ms          240 ms            3 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                           280 ms          276 ms            3 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         428 ms          430 ms            2 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>        228 ms          224 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>             218 ms          219 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                274 ms          273 ms            2 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                      239 ms          240 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   421 ms          430 ms            2 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    367 ms          367 ms            2 nodeCount=1.87k

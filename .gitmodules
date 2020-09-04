@@ -1,0 +1,6 @@
+[submodule "format-benchmark"]
+	path = format-benchmark
+	url = https://github.com/fmtlib/format-benchmark
+[submodule "cpp-serialization-benchmark"]
+	path = cpp-serialization-benchmark
+	url = https://github.com/felixguendling/cpp-serialization-benchmark
