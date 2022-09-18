@@ -3,7 +3,7 @@
 function build() {
     deploy=$1
     cd $deploy
-    git submodule update --init --recursive
+    #git submodule update --init --recursive
     cd -
     mkdir $deploy/build
     cd $deploy/build
