@@ -4,3 +4,9 @@
 [submodule "cpp-serialization-benchmark"]
 	path = cpp-serialization-benchmark
 	url = https://github.com/felixguendling/cpp-serialization-benchmark
+[submodule "mimalloc-bench"]
+	path = mimalloc-bench
+	url = https://github.com/daanx/mimalloc-bench
+[submodule "CxxFunctionBenchmark"]
+	path = CxxFunctionBenchmark
+	url = https://github.com/jamboree/CxxFunctionBenchmark
